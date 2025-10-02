@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Квест Джокера — Дом Квестов</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html">Дом Квестов</a>
+      <button class="hamburger" id="navToggle" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+      <nav class="menu" id="mainMenu">
+        <a href="index.html">Главная</a>
+        <a href="quest.html">Квест</a>
+        <a href="schedule.html">Расписание</a>
+        <a href="reviews.html">Отзывы</a>
+      </nav>
+      <div class="auth" id="authArea">
+        <form id="loginForm" class="auth-form">
+          <input type="tel" id="loginPhone" placeholder="Телефон" required>
+          <input type="password" id="loginPassword" placeholder="Пароль" required>
+          <button type="submit" class="btn btn-small">Войти</button>
+          <a class="link" href="register.html">Регистрация</a>
+        </form>
+        <div id="userBox" class="user-box hidden">
+          <span id="userPhone"></span>
+          <button id="logoutBtn" class="btn btn-small btn-outline">Выйти</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="grid-2">
+      <div>
+        <h1>Квест «Улыбка Джокера»</h1>
+        <p class="muted">Продолжительность: 60 минут · Игроков: 2–6 · Сложность: высокая</p>
+        <div class="card mt-20">
+          <p>В доме царит хаос. На стенах — загадочные символы, часы отсчитывают последние минуты, а из динамиков доносится знакомый смех. Ваша задача — разгадать серию головоломок, чтобы найти ключ и выбраться до того, как Джокер вернётся.</p>
+          <ul>
+            <li>Нелинейные задания и командная работа</li>
+            <li>Атмосферные декорации и спецэффекты</li>
+            <li>Минимум 2 игрока, максимум 6</li>
+            <li>Возрастное ограничение: 14+ (до 14 — со взрослыми)</li>
+          </ul>
+          <div class="mt-20">
+            <a class="btn" href="schedule.html">Записаться</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="assets/img/joker.jpg" alt="Джокер" style="width:100%;border-radius:12px;border:1px solid #23232a" onerror="this.src='https://images.unsplash.com/photo-1549888834-3ec93abae044?q=80&w=1200&auto=format&fit=crop'">
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© 2025 Дом Квестов. Все права защищены.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>/* description page only */</script>
+  
+</body>
+</html>
+
+

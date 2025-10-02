@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дом Квестов — Джокер</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html">Дом Квестов</a>
+      <button class="hamburger" id="navToggle" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+      <nav class="menu" id="mainMenu">
+        <a href="index.html">Главная</a>
+        <a href="quest.html">Квест</a>
+        <a href="schedule.html">Расписание</a>
+        <a href="reviews.html">Отзывы</a>
+      </nav>
+      <div class="auth" id="authArea">
+        <form id="loginForm" class="auth-form">
+          <input type="tel" id="loginPhone" placeholder="Телефон" required>
+          <input type="password" id="loginPassword" placeholder="Пароль" required>
+          <button type="submit" class="btn btn-small">Войти</button>
+          <a class="link" href="register.html">Регистрация</a>
+        </form>
+        <div id="userBox" class="user-box hidden">
+          <span id="userPhone"></span>
+          <button id="logoutBtn" class="btn btn-small btn-outline">Выйти</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container hero">
+    <div class="hero-content">
+      <h1>Квест «Улыбка Джокера»</h1>
+      <p class="lead">Закрытые комнаты, шифры и безумный смех. Сумеете ли вы выбраться до того, как Джокер вернётся? В игре участвуют команды от 2 до 6 человек, продолжительность — 60 минут. Атмосфера напряжения и адреналина гарантирована.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="schedule.html" id="agreeBtn">Согласиться</a>
+        <a class="btn btn-link" href="quest.html">Подробнее о квесте</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/img/joker.jpg" alt="Джокер" onerror="this.src='https://images.unsplash.com/photo-1549888834-3ec93abae044?q=80&w=1200&auto=format&fit=crop'">
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© 2025 Дом Квестов. Все права защищены.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+
+

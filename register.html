@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход / Регистрация — Дом Квестов</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html">Дом Квестов</a>
+      <button class="hamburger" id="navToggle" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+      <nav class="menu" id="mainMenu">
+        <a href="index.html">Главная</a>
+        <a href="quest.html">Квест</a>
+        <a href="schedule.html">Расписание</a>
+        <a href="reviews.html">Отзывы</a>
+      </nav>
+      <div class="auth" id="authArea">
+        <form id="loginForm" class="auth-form">
+          <input type="tel" id="loginPhone" placeholder="Телефон" required>
+          <input type="password" id="loginPassword" placeholder="Пароль" required>
+          <button type="submit" class="btn btn-small">Войти</button>
+          <a class="link" href="register.html">Регистрация</a>
+        </form>
+        <div id="userBox" class="user-box hidden">
+          <span id="userPhone"></span>
+          <button id="logoutBtn" class="btn btn-small btn-outline">Выйти</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Регистрация</h1>
+    <p class="muted">Укажите номер телефона и пароль, чтобы создать аккаунт.</p>
+    <div class="card mt-20">
+      <form id="registerForm" class="stacked">
+        <label>Номер телефона
+          <input type="tel" id="regPhone" placeholder="+7 900 000-00-00" required>
+        </label>
+        <label>Пароль
+          <input type="password" id="regPassword" placeholder="Минимум 4 символа" required>
+        </label>
+        <button type="submit" class="btn">Создать аккаунт</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© 2025 Дом Квестов. Все права защищены.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+
+
